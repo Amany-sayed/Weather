@@ -41,3 +41,10 @@ const searchWeather = () => {
         })
     valueSearch.value = '';
 }
+
+const initApp = () => {
+    let defaultCity = 'Fayoum';  
+    valueSearch.value = defaultCity;
+    searchWeather(defaultCity);
+};
+initApp();
